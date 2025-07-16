@@ -1,0 +1,29 @@
+{
+  "name": "3d-models-view",
+  "version": "1.0.0",
+  "description": "view 3d model",
+  "license": "ISC",
+  "author": "ABHINAV U V",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.844.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.3",
+    "mongoose-unique-validator": "^4.0.1",
+    "multer": "^2.0.1",
+    "multer-s3": "^3.0.1",
+    "nodemon": "^3.1.10",
+    "serverless-http": "^3.2.0",
+    "uuid": "^11.1.0"
+  }
+}

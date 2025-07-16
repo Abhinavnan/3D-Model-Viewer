@@ -80,7 +80,7 @@ const View = () => {
                     </IconButton>
                 </Box>
             ))}
-            <PropagateLoader color="#000000ff" loading={isLoading && deleteId !== ''} size={10} cssOverride={{margin: 'auto'}} />
+            <PropagateLoader color="#000000ff" loading={isLoading && deleteId === ''} size={10} cssOverride={{margin: 'auto'}} />
             <ErrorBox clearError={clearError} error={error} />
             <PopupMessage message={message} clearMessage={clearMessage} />
         </Box>

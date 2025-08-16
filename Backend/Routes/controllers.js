@@ -40,7 +40,7 @@ const deleteModel = async (req, res, next) => {
     try {
         model = await ModelDB.findById(modelId);
     }catch(err) {
-        const error = new HttpError('Something went wrong, could not find a place.', 500); 
+        const error = new HttpError('Something went wrong, could not find a model.', 500); 
         return next(error); 
     }
     const modelUrl = model.url; 
